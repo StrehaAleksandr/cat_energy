@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="main-navigation">
+                <a class="main-navigation-logo" href="index.html">
+                    <img src="image/logo-desktop.svg">
+                </a>
+                
+                <h1 class="visually-hidden">Cat Energy</h1>
+              
+                <ul>
+                    <li>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Каталог Продукции</a>
+                    </li>
+                    <li>
+                        <a href="form.html">Подбор Программы</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="modal">
+                <h2>Подбор программы</h2>
+                <p>заполните анкету и мы подберём программу питания для вашего кота</p>
+                <form>
+                    <p class="visually-hidden">Данные кота</p>
+                    <label for="name">Имя*</label>
+                    <input type="text" id="name">
+                    <label for="weight">Вес(кг)*</label>
+                    <input type="text" id="weight">
+                    <label for="age">Возраст(лет)</label>
+                    <input type="text" id="age">
+                    <p class="visually-hidden">Коту нужно</p>
+                    <input type="checkbox" id="loss">
+                    <label for="loss">похудение</label>
+                    <input type="checkbox" id="fat">
+                    <label for="fat">набор массы</label>
+                    <input type="checkbox" id="dont-know">
+                    <label for="dont-know">не знаю(нужен ваш совет)</label>
+                    <p>Контактные данные(владельца кота)</p>
+                    <label for="email">E-mail*</label>
+                    <input type="email" id="email">
+                    <label for="tel">телефон*</label>
+                    <input type="text" id="tel">
+                    <p>Дополнительно</p>
+                    <input type="checkbox" id="sugar">
+                    <label for="sugar">сахоаозаменитель</label>
+                    <input type="checkbox" id="water">
+                    <label for="water">питьевая вода</label>
+                    <input type="checkbox" id="milk">
+                    <label for="milk">молоко</label>
+                    <input type="checkbox" id="vitamins">
+                    <label for="vitamins">витамины</label>
+                    <button>Отправить заявку</button>
+                    <span>* - обязательные поля</span>
+                </form>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <section class="main-footer__map">
+                <img src="image/bg-map-desktop@1x.png">
+                <img src="image/map-pin.png">
+                <div class="main-footer__adress">
+                    <p>Приглашаем к сотрудничеству дилеров!</p>
+                    <address>Санкт-Петербург ул.Большая Конюшенная, д. 19/8</address>
+                </div>
+            </section>
+            <section class="main-footer__contacts">
+                <a class="main-navigation-logo" href="index.html">
+                    <img src="image/logo-footer.svg">
+                </a>
+                <ul class="main-footer__socials">
+                    <li>
+                        <a href="index.html">
+                            <img src="image/icon-vk.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <img src="image/icon-insta.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <img src="image/icon-fb.svg">
+                        </a>
+                    </li>
+                </ul>
+                <span>HTML Academy</span>
+                <img src="image/htmlacademy.svg" class="HTML-Academy">
+            </section>
+        </footer>
+    </body>
+</html>

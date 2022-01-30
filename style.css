@@ -1,0 +1,14 @@
+.main-navigation-logo img {width: 15%;}
+.fuction-eat
+{
+    background-image: url(image/index-background-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: right;
+}
+.weight-change__items img {width: 5%; background-color: green;}
+.weight-change__items {background-color: grey;}
+.HTML-Academy {width: 3%;}
+.how-work__items img {background-color: green;}
+.main-footer-logo img {width: 10%;}
+.life-example {background-color: grey;}
