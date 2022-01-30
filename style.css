@@ -1,4 +1,48 @@
-.main-navigation-logo img {width: 15%;}
+body 
+{
+    font-family: Oswald, Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+}
+a 
+{
+    font: inherit;
+    text-decoration: none;
+    color: black;
+}
+
+.button
+{
+    font: inherit;
+    background-color: green;
+}
+
+/*header*/
+.main-navigation__pages 
+{
+    list-style: none;
+    /* color: white; */
+    
+} 
+.main-navigation__pages :hover
+{
+    color: grey;
+}
+.main-navigation__pages :active
+{
+    color: indigo;
+}
+.page-active
+{
+    text-decoration: underline;
+}
+.main-navigation-logo img 
+{
+    width: 15%;
+}
+
+/*main*/
 .fuction-eat
 {
     background-image: url(image/index-background-desktop@1x.jpg);
@@ -6,9 +50,43 @@
     background-position: top;
     background-position-x: right;
 }
-.weight-change__items img {width: 5%; background-color: green;}
-.weight-change__items {background-color: grey;}
-.HTML-Academy {width: 3%;}
-.how-work__items img {background-color: green;}
-.main-footer-logo img {width: 10%;}
-.life-example {background-color: grey;}
+.weight-change__list
+{
+    list-style: none;
+}
+.weight-change__items img
+{
+    width: 5%;
+    background-color: green;
+}
+.weight-change__items 
+{
+    background-color: grey;
+}
+.how-work__list
+{
+    list-style: none;
+}
+.how-work__items img 
+{
+    background-color: green;
+}
+.life-example 
+{
+    background-color: grey;
+}
+
+/*footer*/
+.main-footer-logo img 
+{
+    width: 10%;
+}
+.HTML-Academy 
+{
+    width: 3%;
+}
+.main-footer__socials
+{
+    list-style: none;
+}
+
