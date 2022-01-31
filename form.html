@@ -29,33 +29,37 @@
                 <h2>Подбор программы</h2>
                 <p>заполните анкету и мы подберём программу питания для вашего кота</p>
                 <form class="modal__form">
-                    <div class="form__cat-data">
-                        <p class="visually-hidden">Данные кота</p>
+                    <fieldset class="form__cat-data">
+                        <legend class="visually-hidden">Данные кота</legend>
                         <label for="name">Имя*</label>
                         <input type="text" id="name" required>
                         <label for="weight">Вес(кг)*</label>
                         <input type="text" id="weight" required>
                         <label for="age">Возраст(лет)</label>
                         <input type="text" id="age">
-                    </div>
-                    <div class="form__what-need">
-                        <p class="visually-hidden">Коту нужно</p>
+                    </fieldset>
+                    <fieldset class="form__what-need">
+                        <legend class="visually-hidden">Коту нужно</legend>
                         <input type="radio" id="loss">
                         <label for="loss">похудение</label>
                         <input type="radio" id="fat">
                         <label for="fat">набор массы</label>
                         <input type="radio" id="dont-know">
                         <label for="dont-know">не знаю(нужен ваш совет)</label>
-                    </div>
-                    <div class="form__you-contacts">
-                        <p>Контактные данные(владельца кота)</p>
+                    </fieldset>
+                    <fieldset class="form__you-contacts">
+                        <legend>Контактные данные(владельца кота)</legend>
                         <label for="email">E-mail*</label>
                         <input type="email" id="email" required>
                         <label for="tel">телефон*</label>
                         <input type="text" id="tel" required>
-                    </div>
-                    <div class="form__dop">
-                        <p>Дополнительно</p>
+                    </fieldset>
+                    <fieldset class="form__comments">
+                        <legend>Комментарии</legend>
+                        <input type="text" id="comment">
+                    </fieldset>
+                    <fieldset class="form__dop">
+                        <legend>Дополнительно</legend>
                         <input type="checkbox" id="sugar">
                         <label for="sugar">сахоаозаменитель</label>
                         <input type="checkbox" id="water">
@@ -64,7 +68,7 @@
                         <label for="milk">молоко</label>
                         <input type="checkbox" id="vitamins">
                         <label for="vitamins">витамины</label>
-                    </div>
+                    </fieldset>
                     <button class="button" type="submit">Отправить заявку</button>
                     <span>* - обязательные поля</span>
                 </form>
@@ -72,8 +76,8 @@
         </main>
         <footer class="main-footer">
             <section class="main-footer__map">
-                <img src="image/bg-map-desktop@1x.png">
-                <img src="image/map-pin.png">
+                <img src="image/bg-map-desktop@1x.png" class="map">
+                <img src="image/map-pin.png" class="map-pin">
                 <div class="main-footer__adress">
                     <p>Приглашаем к сотрудничеству дилеров!</p>
                     <address>Санкт-Петербург ул.Большая Конюшенная, д. 19/8</address>

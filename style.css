@@ -17,6 +17,19 @@ a
     font: inherit;
     background-color: green;
 }
+.visually-hidden
+{
+    position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+
+  border: 0;
+}
 
 /*header*/
 .main-navigation__pages 
@@ -105,13 +118,23 @@ a
 {
     width: 5%;
 }
-
+.form__cat-data
+{
+    border-style: none;
+}
 .form__what-need
 {
     border-style: solid;
     border-color: gray;
     border-width: 1px;
 }
+.form__you-contacts, .form__comments,.form__dop
+{
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
 /*footer*/
 .main-footer-logo img 
 {
