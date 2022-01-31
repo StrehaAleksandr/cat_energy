@@ -28,36 +28,44 @@
             <section class="modal">
                 <h2>Подбор программы</h2>
                 <p>заполните анкету и мы подберём программу питания для вашего кота</p>
-                <form>
-                    <p class="visually-hidden">Данные кота</p>
-                    <label for="name">Имя*</label>
-                    <input type="text" id="name">
-                    <label for="weight">Вес(кг)*</label>
-                    <input type="text" id="weight">
-                    <label for="age">Возраст(лет)</label>
-                    <input type="text" id="age">
-                    <p class="visually-hidden">Коту нужно</p>
-                    <input type="radio" id="loss">
-                    <label for="loss">похудение</label>
-                    <input type="radio" id="fat">
-                    <label for="fat">набор массы</label>
-                    <input type="radio" id="dont-know">
-                    <label for="dont-know">не знаю(нужен ваш совет)</label>
-                    <p>Контактные данные(владельца кота)</p>
-                    <label for="email">E-mail*</label>
-                    <input type="email" id="email">
-                    <label for="tel">телефон*</label>
-                    <input type="text" id="tel">
-                    <p>Дополнительно</p>
-                    <input type="checkbox" id="sugar">
-                    <label for="sugar">сахоаозаменитель</label>
-                    <input type="checkbox" id="water">
-                    <label for="water">питьевая вода</label>
-                    <input type="checkbox" id="milk">
-                    <label for="milk">молоко</label>
-                    <input type="checkbox" id="vitamins">
-                    <label for="vitamins">витамины</label>
-                    <button class="button">Отправить заявку</button>
+                <form class="modal__form">
+                    <div class="form__cat-data">
+                        <p class="visually-hidden">Данные кота</p>
+                        <label for="name">Имя*</label>
+                        <input type="text" id="name" required>
+                        <label for="weight">Вес(кг)*</label>
+                        <input type="text" id="weight" required>
+                        <label for="age">Возраст(лет)</label>
+                        <input type="text" id="age">
+                    </div>
+                    <div class="form__what-need">
+                        <p class="visually-hidden">Коту нужно</p>
+                        <input type="radio" id="loss">
+                        <label for="loss">похудение</label>
+                        <input type="radio" id="fat">
+                        <label for="fat">набор массы</label>
+                        <input type="radio" id="dont-know">
+                        <label for="dont-know">не знаю(нужен ваш совет)</label>
+                    </div>
+                    <div class="form__you-contacts">
+                        <p>Контактные данные(владельца кота)</p>
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" required>
+                        <label for="tel">телефон*</label>
+                        <input type="text" id="tel" required>
+                    </div>
+                    <div class="form__dop">
+                        <p>Дополнительно</p>
+                        <input type="checkbox" id="sugar">
+                        <label for="sugar">сахоаозаменитель</label>
+                        <input type="checkbox" id="water">
+                        <label for="water">питьевая вода</label>
+                        <input type="checkbox" id="milk">
+                        <label for="milk">молоко</label>
+                        <input type="checkbox" id="vitamins">
+                        <label for="vitamins">витамины</label>
+                    </div>
+                    <button class="button" type="submit">Отправить заявку</button>
                     <span>* - обязательные поля</span>
                 </form>
             </section>

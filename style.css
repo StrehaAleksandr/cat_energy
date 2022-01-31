@@ -105,6 +105,13 @@ a
 {
     width: 5%;
 }
+
+.form__what-need
+{
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+}
 /*footer*/
 .main-footer-logo img 
 {
