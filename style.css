@@ -76,6 +76,35 @@ a
     background-color: grey;
 }
 
+.products__list
+{
+    list-style: none;
+}
+
+.products__items
+{
+    background-color: gray;
+}
+.products__more 
+{
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+}
+.products__more img
+{
+    width: 5%;
+}
+
+.another-products__gift
+{
+    background-image: url(image/gift-photo-desktop@1x.jpg);
+    background-repeat: no-repeat;
+}
+.another-products__gift img
+{
+    width: 5%;
+}
 /*footer*/
 .main-footer-logo img 
 {
