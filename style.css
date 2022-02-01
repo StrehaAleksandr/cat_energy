@@ -180,20 +180,21 @@ a
     background-image: url(image/bg-map-desktop@1x.png);
     width: 1440px;
     height: 400px;
+    display: flex;
 }
 .main-footer__map img
 {
-    /* background-color: black; */
+    width: 110px;
+    height: 105px;
     margin-top: 150px;
-    /* margin-bottom: 145px; */
-    margin-left: 1000px;
+    margin-left: auto;
     margin-right: 325px;
 }
 .main-footer__adress
 {
     height: 200px;
     width: 570px;
-    margin-top: -180px;
+    margin-top: 95px;
     margin-left: 110px;
     background-color: white;
 }
