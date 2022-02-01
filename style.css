@@ -1,10 +1,31 @@
+@font-face
+{
+    font-family: "Oswald";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url("fonts/oswaldmedium.woff2") format("woff2"), 
+        url("fonts/oswaldmedium.woff") format("woff");
+}
+
+@font-face
+{
+    font-family: "Oswald";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("fonts/oswaldregular.woff2") format("woff2"), 
+        url("fonts/oswaldregular.woff") format("woff");
+}
+
 body 
 {
-    font-family: Oswald, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 16px;
     color: black;
     background-color: white;
 }
+
 a 
 {
     font: inherit;
@@ -17,18 +38,19 @@ a
     font: inherit;
     background-color: green;
 }
+
 .visually-hidden
 {
     position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
 
-  border: 0;
+    border: 0;
 }
 
 /*header*/
