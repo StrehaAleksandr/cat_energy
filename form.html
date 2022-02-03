@@ -29,30 +29,50 @@
                 <h2>Подбор программы</h2>
                 <p>заполните анкету и мы подберём программу питания для вашего кота</p>
                 <form class="modal__form">
-                    <fieldset class="form__cat-data">
-                        <legend class="visually-hidden">Данные кота</legend>
-                        <label for="name">Имя*</label>
-                        <input type="text" id="name" required>
-                        <label for="weight">Вес(кг)*</label>
-                        <input type="text" id="weight" required>
-                        <label for="age">Возраст(лет)</label>
-                        <input type="text" id="age">
-                    </fieldset>
-                    <fieldset class="form__what-need">
-                        <legend class="visually-hidden">Коту нужно</legend>
-                        <input type="radio" id="loss">
-                        <label for="loss">похудение</label>
-                        <input type="radio" id="fat">
-                        <label for="fat">набор массы</label>
-                        <input type="radio" id="dont-know">
-                        <label for="dont-know">не знаю(нужен ваш совет)</label>
-                    </fieldset>
+                    <div class="conteiner">
+                        <fieldset class="form__cat-data">
+                            <legend class="visually-hidden">Данные кота</legend>
+                            <div>                                
+                                <label for="name">Имя:*</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div>
+                                <label for="weight">Вес(кг):*</label>
+                                <input type="text" id="weight" required>
+                            </div>
+                            <div>                                
+                                <label for="age">Возраст(лет):</label>
+                                <input type="text" id="age">
+                            </div>
+                        </fieldset>
+                        <fieldset class="form__what-need">
+                            <legend class="visually-hidden">Коту нужно</legend>
+                            <div>
+                                <input type="radio" id="loss">
+                                <label for="loss">похудение</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="fat">
+                                <label for="fat">набор массы</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="dont-know">
+                                <label for="dont-know">не знаю(нужен ваш совет)</label>
+                            </div>
+                        </fieldset>
+                    </div>
                     <fieldset class="form__you-contacts">
                         <legend>Контактные данные(владельца кота)</legend>
-                        <label for="email">E-mail*</label>
-                        <input type="email" id="email" required>
-                        <label for="tel">телефон*</label>
-                        <input type="text" id="tel" required>
+                        <div class="conteiner">
+                            <div class="email-conteiner">
+                                <label for="email">E-mail:*</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="tel-conteiner">
+                                <label for="tel">телефон:*</label>
+                                <input type="text" id="tel" required>
+                            </div>
+                        </div>
                     </fieldset>
                     <fieldset class="form__comments">
                         <legend>Комментарии</legend>
@@ -60,14 +80,24 @@
                     </fieldset>
                     <fieldset class="form__dop">
                         <legend>Дополнительно</legend>
-                        <input type="checkbox" id="sugar">
-                        <label for="sugar">сахоаозаменитель</label>
-                        <input type="checkbox" id="water">
-                        <label for="water">питьевая вода</label>
-                        <input type="checkbox" id="milk">
-                        <label for="milk">молоко</label>
-                        <input type="checkbox" id="vitamins">
-                        <label for="vitamins">витамины</label>
+                        <div class="conteiner">
+                            <div class="sugar-conteiner">
+                                <input type="checkbox" id="sugar">
+                                <label for="sugar">сахоаозаменитель</label>
+                            </div>
+                            <div class="water-conteiner">
+                                <input type="checkbox" id="water">
+                                <label for="water">питьевая вода</label>
+                            </div>
+                            <div class="milk-conteiner">
+                                <input type="checkbox" id="milk">
+                                <label for="milk">молоко</label>
+                            </div>
+                            <div class="vitamins-conteiner">
+                                <input type="checkbox" id="vitamins">
+                                <label for="vitamins">витамины</label>
+                            </div>
+                        </div>
                     </fieldset>
                     <button class="button" type="submit">Отправить заявку</button>
                     <span>* - обязательные поля</span>
