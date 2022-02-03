@@ -134,7 +134,7 @@ a
 /*main*/
 .fuction-eat
 {
-    background-image: url(image/index-background-desktop@1x.jpg);
+    background-image: url(image/index-background-desktop@1x.jpg), linear-gradient(to right, #fff, #fff 50%, #0f0 50%, #0f0 100%);
     background-repeat: no-repeat;
     background-position: top;
     background-position-x: right;
