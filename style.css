@@ -61,11 +61,26 @@ a
     border: 0;
 }
 
+.wrapper
+{
+    width: 1220px;
+    margin: 0 auto;
+}
+
 /*header*/
+.main-header
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
 .main-navigation
 {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
 }
 
 .main-navigation__pages 
@@ -73,9 +88,7 @@ a
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: 110px;
-    margin-top: 75px;
+    margin: 0;
 } 
 
 .main-navigation__pages a
@@ -89,7 +102,6 @@ a
 .white-color a
 {
     color: white;
-    background-color: green;
 }
 
 .marging
@@ -117,8 +129,6 @@ a
 {
     width: 210px;
     height: 70px;
-    margin-top: 45px;
-    margin-left: 110px;
 }
 
 /*main*/
@@ -138,6 +148,7 @@ a
     line-height: 60px;
     display: block;
     width: 450px;
+    margin: 0;
     margin-left: 195px;
     margin-bottom: 10px;
 }
