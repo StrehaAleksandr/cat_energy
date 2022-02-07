@@ -63,7 +63,7 @@
                     </div>
                     <fieldset class="form__you-contacts">
                         <legend>Контактные данные(владельца кота)</legend>
-                        <div class="conteiner">
+                        <div class="conteiner wrapper">
                             <div class="email-conteiner">
                                 <label for="email">E-mail:*</label>
                                 <input type="email" id="email" placeholder="kuklachev@gmail.com" required>
@@ -80,23 +80,27 @@
                     </fieldset>
                     <fieldset class="form__dop">
                         <legend>Дополнительно</legend>
-                        <div class="conteiner">
-                            <div class="sugar-conteiner">
-                                <input type="checkbox" id="sugar">
-                                <label for="sugar">сахоаозаменитель</label>
-                            </div>
-                            <div class="water-conteiner">
-                                <input type="checkbox" id="water">
-                                <label for="water">питьевая вода</label>
-                            </div>
-                            <div class="milk-conteiner">
-                                <input type="checkbox" id="milk">
-                                <label for="milk">молоко</label>
-                            </div>
-                            <div class="vitamins-conteiner">
-                                <input type="checkbox" id="vitamins">
-                                <label for="vitamins">витамины</label>
-                            </div>
+                        <div class="checkbox-conteiner wrapper">
+                            <label class="dop-checkbox">
+                                <input type="checkbox" class="visually-hidden">
+                                <span class="checkbox-indicator"></span>
+                                сахоаозаменитель
+                            </label>                            
+                            <label class="dop-checkbox">
+                                <input type="checkbox" class="visually-hidden">
+                                <span class="checkbox-indicator"></span>
+                                питьевая вода
+                            </label>  
+                            <label class="dop-checkbox">
+                                <input type="checkbox" class="visually-hidden">
+                                <span class="checkbox-indicator"></span>
+                                молоко
+                            </label>  
+                            <label class="dop-checkbox">
+                                <input type="checkbox" class="visually-hidden">
+                                <span class="checkbox-indicator"></span>
+                                витамины
+                            </label>  
                         </div>
                     </fieldset>
                     <button class="button" type="submit">Отправить заявку</button>
@@ -112,7 +116,7 @@
                 </div>
                 <img src="image/map-pin.png">
             </section>
-            <section class="main-footer__contacts">
+            <section class="main-footer__contacts wrapper">
                 <a class="main-footer-logo" href="index.html">
                     <img src="image/logo-footer.svg">
                 </a>

@@ -582,7 +582,7 @@ a
     font-family: Oswald, Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 40px;
     text-transform: uppercase;
 }
 
@@ -593,7 +593,7 @@ a
     font-weight: 400;
     line-height: 36px;
     padding: 0px 20px;
-    margin-left: 87px;
+    margin-left: 77px;
     margin-bottom: 75px;
 }
 
@@ -618,7 +618,7 @@ a
     border: none;
     width: 570px;
     padding: 0px;
-    margin-left: 110px;
+    margin-left: 100px;
     margin-right: 80px;
 }
 
@@ -651,7 +651,7 @@ a
     border-style: solid;
     border-color: gray;
     border-width: 1px;
-    width: 570px;
+    width: 544px;
     height: 200px;
 }
 
@@ -667,21 +667,25 @@ a
     flex-wrap: wrap;
 }
 
-.email-conteiner
-{
-    margin-left: 110px;
-    margin-right: 80px;
-}
-
 .email-conteiner input
 {
     font-family: Oswald, Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
-    /* height: 50px; */
-    width: 485px;
+    width: 400px;
     padding: 15px 20px;
+    padding-right: 60px;
+}
+
+.email-conteiner label, .tel-conteiner label
+{
+    margin-right: 15px;
+}
+
+.tel-conteiner
+{
+    margin-left: auto;
 }
 
 .tel-conteiner input
@@ -690,9 +694,9 @@ a
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
-    /* height: 50px; */
-    width: 470px;
+    width: 380px;
     padding: 15px 20px;
+    padding-right: 65px;
 }
 
 .form__comments textarea
@@ -701,8 +705,8 @@ a
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    margin-left: 110px;
-    width: 1220px;
+    margin-left: 100px;
+    width: 1180px;
     height: 175px;
     padding: 15px 20px;
     resize: vertical;
@@ -724,14 +728,63 @@ a
     margin-top: 70px;
 }
 
-.sugar-conteiner
+.checkbox-conteiner
 {
-    padding: 0px;
-    margin-left: 105px;
-    margin-right: 105px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.water-conteiner 
+.dop-checkbox
+{
+    position: relative;
+    padding-left: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dop-checkbox:focus,
+.dop-checkbox:hover
+{
+    color: green;
+}
+
+.dop-checkbox input[type="checkbox"] + .checkbox-indicator
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+}
+
+.dop-checkbox input[type="checkbox"]:focus + .checkbox-indicator
+{
+    border-color: green;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.dop-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before
+{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    width: 30px;
+    height: 15px;
+    border-left: 2px solid green;
+    border-bottom: 2px solid green;
+}
+
+.dop-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before
+{
+    transform: rotate(-45deg);
+}
+
+/* .water-conteiner 
 {
     margin-right: 140px;
 }
@@ -739,7 +792,7 @@ a
 .milk-conteiner
 {
     margin-right: 200px;
-}
+} */
 
 /*footer*/
 .main-footer__map
@@ -779,7 +832,6 @@ a
 {
     width: 130px;
     height: 35px;
-    margin-left: 110px;
     margin-top: 60px;
     margin-bottom: 60px;
 }
@@ -793,7 +845,6 @@ a
 
 .HTML-Academy 
 {
-    margin-right: 110px;
     width: 3%;
 }
 
