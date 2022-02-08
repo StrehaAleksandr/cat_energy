@@ -617,6 +617,7 @@ a
 {
     border: none;
     width: 570px;
+    height: 195px;
     padding: 0px;
     margin-left: 100px;
     margin-right: 80px;
@@ -630,7 +631,7 @@ a
     line-height: 20px;
     box-sizing: border-box;
     height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     width: 100%;
     padding: 15px 20px;
 }
@@ -652,13 +653,77 @@ a
     border-color: gray;
     border-width: 1px;
     width: 544px;
-    height: 200px;
+    height: 193px;
+    padding: 0;
 }
 
-.form__what-need input
+/* .form__what-need input
 {
     margin-top: 35px;
     margin-bottom: 14px;
+} */
+
+.radio-conteiner
+{
+    position: relative;
+    padding-left: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.radio-conteiner:focus,
+.radio-conteiner:hover
+{
+    color: green;
+}
+
+.radio-conteiner input[type="radio"] + .radio-indicator
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.radio-conteiner input[type="radio"]:focus + .radio-indicator
+{
+    border-color: green;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.radio-conteiner input[type="radio"]:checked + .radio-indicator::before
+{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+.form__what-need > :nth-child(2)
+{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.form__what-need > :last-child
+{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.form__what-need label
+{
+    margin-left: 30px;
 }
 
 .conteiner
