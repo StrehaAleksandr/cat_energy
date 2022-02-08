@@ -42,7 +42,7 @@ a
     font-size: 20px;
     font-weight: 400;
     color: white;
-    background-color: green;
+    background-color: #68b738;
     text-transform: uppercase;
     margin: 0px;
     padding: 15px 25px;
@@ -136,7 +136,7 @@ a
 /*main*/
 .fuction-eat
 {
-    background-image: url(image/index-background-desktop@1x.jpg), linear-gradient(to right, #fff, #fff 50%, #0f0 50%, #0f0 100%);
+    background-image: url(image/index-background-desktop@1x.jpg), linear-gradient(to right, #fff, #fff 50%, #68b738 50%, #68b738 100%);
     background-repeat: no-repeat;
     background-position: top;
     background-position-x: right;
@@ -153,6 +153,8 @@ a
     margin: 0;
     margin-left: 195px;
     margin-bottom: 10px;
+    position: relative;
+    top: 225px;
 }
 
 .fuction-eat p
@@ -161,6 +163,22 @@ a
     font-size: 20px;
     font-weight: 400;
     margin-left: 195px;
+    position: relative;
+    top: 225px;
+}
+
+.fuction-eat img
+{
+    position: relative;
+    left: 550px;
+    top: -50px;
+}
+
+.fuction-eat a
+{
+    position: relative;
+    top: -225px;
+    left: -360px;
 }
 
 .weight-change__list
@@ -172,19 +190,12 @@ a
     margin-left: 110px;
 }
 
-/* .weight-change__items img
-{
-    width: 160px;
-    height: 105px;
-    background-color: green;
-} */
-
 .weight-change__items 
 {
     height: 370px;
     width: 570px;
     margin-right: 80px;
-    background-color: grey;    
+    background-color: #f2f2f2;    
     position: relative;
 }
 
@@ -226,10 +237,12 @@ a
     background-image: url(image/icon-cat-slim.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: green;
+    background-color: #68b738;
     position: absolute;
     left: 20px;
-    top: 37px
+    top: 37px;
+    border: 1px solid #68b738;
+    border-radius: 50px;
 }
 
 .set-mass::before
@@ -241,10 +254,12 @@ a
     background-image: url(image/icon-cat-pro.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: green;
+    background-color: #68b738;
     position: absolute;
     left: 20px;
-    top: 37px
+    top: 37px;
+    border: 1px solid #68b738;
+    border-radius: 50px;
 }
 
 .how-work h2
@@ -275,12 +290,12 @@ a
 
 .how-work__items img 
 {
-    background-color: green;
+    background-color: #68b738;
 }
 
 .life-example 
 {
-    background-color: grey;
+    background: linear-gradient(to bottom, white, white 125px,#f2f2f2 125px, #f2f2f2 100%);
 }
 
 .life-example h2
@@ -290,6 +305,7 @@ a
     font-weight: 400;
     line-height: 60px;
     margin-left: 110px;
+    margin-bottom: 140px;
 }
 
 .life-example__example
@@ -364,22 +380,45 @@ a
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    /* align-items: baseline; */
 }
 
 .products__items
 {
-    background-color: gray;
+    background-color: #f2f2f2;
 
     height: 430px;
     width: 245px;
     margin-bottom: 140px;
     margin-right: 79px;
+    text-align: center;
 }
 
 .products__list > :nth-child(4n)
 {
     margin-right: 0;
+}
+
+.items__table
+{
+    width: 170px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-collapse: collapse;
+}
+
+.table__string
+{
+    border-bottom: 1px solid black;
+}
+
+.table__string :first-child
+{
+    text-align: left;
+}
+
+.table__string :last-child
+{
+    text-align: right;
 }
 
 .products__more 
@@ -390,7 +429,6 @@ a
 
     height: 430px;
     width: 245px;
-    /* margin-left: 100px; */
     text-align: center;
 }
 
@@ -440,7 +478,7 @@ a
     display: flex;
     align-items: center;
     margin-bottom: 75px;
-    margin-top: 75px;
+    margin-top: -60px;
 }
 
 .custom-h::before,
@@ -524,7 +562,7 @@ a
 {
     height: 290px;
     width: 245px;
-    background-color: green;
+    background-color: #68b738;
     background-image: url(image/gift-photo-desktop@1x.jpg);
     background-repeat: no-repeat;
     padding: 0;
@@ -539,9 +577,7 @@ a
     width: 60px;
     height: 65px;
     margin: 0;
-    margin-top: 65px;
-    /* margin-bottom: 65px; */
-    
+    margin-top: 65px;    
 }
 
 .another-products__gift p
@@ -657,12 +693,6 @@ a
     padding: 0;
 }
 
-/* .form__what-need input
-{
-    margin-top: 35px;
-    margin-bottom: 14px;
-} */
-
 .radio-conteiner
 {
     position: relative;
@@ -675,7 +705,7 @@ a
 .radio-conteiner:focus,
 .radio-conteiner:hover
 {
-    color: green;
+    color: #68b738;
 }
 
 .radio-conteiner input[type="radio"] + .radio-indicator
@@ -691,7 +721,7 @@ a
 
 .radio-conteiner input[type="radio"]:focus + .radio-indicator
 {
-    border-color: green;
+    border-color: #68b738;
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
 }
@@ -700,12 +730,12 @@ a
 {
     content: "";
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 9px;
+    left: 9px;
     width: 20px;
     height: 20px;
-    background-color: green;
-    border: 1px solid green;
+    background-color: #68b738;
+    border: 1px solid #68b738;
     border-radius: 10px;
 }
 
@@ -788,7 +818,7 @@ a
     border-left: none;
     border-right: none;
     padding: 0px;
-    border-color: green;
+    border-color: #68b738;
     border-width: 2px;    
     margin-top: 70px;
 }
@@ -827,7 +857,7 @@ a
 
 .dop-checkbox input[type="checkbox"]:focus + .checkbox-indicator
 {
-    border-color: green;
+    border-color: #68b738;
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
 }
@@ -836,28 +866,13 @@ a
 {
     content: "";
     position: absolute;
-    top: 1px;
+    top: 5px;
     left: 5px;
     width: 30px;
-    height: 15px;
-    border-left: 2px solid green;
-    border-bottom: 2px solid green;
+    height: 30px;
+    background-image: url(image/icon-tick.svg);
+    background-repeat: no-repeat;
 }
-
-.dop-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before
-{
-    transform: rotate(-45deg);
-}
-
-/* .water-conteiner 
-{
-    margin-right: 140px;
-}
-
-.milk-conteiner
-{
-    margin-right: 200px;
-} */
 
 /*footer*/
 .main-footer__map
