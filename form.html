@@ -26,10 +26,12 @@
         </header>
         <main>
             <section class="modal">
-                <h2>Подбор программы</h2>
-                <p>заполните анкету и мы подберём программу питания для вашего кота</p>
+                <h2 class="wrapper">Подбор программы</h2>
+                <div class="wrapper">
+                    <p>заполните анкету и мы подберём программу питания для вашего кота</p>
+                </div>
                 <form class="modal__form">
-                    <div class="conteiner">
+                    <div class="conteiner-2 wrapper">
                         <fieldset class="form__cat-data">
                             <legend class="visually-hidden">Данные кота</legend>
                             <div class="conteiner-1">                                
@@ -48,7 +50,7 @@
                         <fieldset class="form__what-need">
                             <legend class="visually-hidden">Коту нужно</legend>
                             <label class="radio-conteiner">
-                                <input class="visually-hidden" type="radio" name="weight-change" value="loss" checked>
+                                <input class="visually-hidden" type="radio" name="weight-change" value="loss">
                                 <span class="radio-indicator"></span>
                                 похудение
                             </label>
@@ -58,7 +60,7 @@
                                 набор массы
                             </label>
                             <label class="radio-conteiner">
-                                <input class="visually-hidden" type="radio" name="weight-change" value="dont-now">
+                                <input class="visually-hidden" type="radio" name="weight-change" value="dont-now" checked>
                                 <span class="radio-indicator"></span>
                                 не знаю(нужен ваш совет)
                             </label>
@@ -83,31 +85,33 @@
                     </fieldset>
                     <fieldset class="form__dop">
                         <legend>Дополнительно</legend>
-                        <div class="checkbox-conteiner wrapper">
-                            <label class="dop-checkbox">
+                        <div class="conteiner wrapper">
+                            <label class="dop-checkbox sugar">
                                 <input type="checkbox" class="visually-hidden">
                                 <span class="checkbox-indicator"></span>
                                 сахоаозаменитель
                             </label>                            
-                            <label class="dop-checkbox">
+                            <label class="dop-checkbox water">
                                 <input type="checkbox" class="visually-hidden">
                                 <span class="checkbox-indicator"></span>
                                 питьевая вода
                             </label>  
-                            <label class="dop-checkbox">
+                            <label class="dop-checkbox milk">
                                 <input type="checkbox" class="visually-hidden">
                                 <span class="checkbox-indicator"></span>
                                 молоко
                             </label>  
-                            <label class="dop-checkbox">
+                            <label class="dop-checkbox vitamins">
                                 <input type="checkbox" class="visually-hidden">
                                 <span class="checkbox-indicator"></span>
                                 витамины
                             </label>  
                         </div>
                     </fieldset>
-                    <button class="button" type="submit">Отправить заявку</button>
-                    <span>* - обязательные поля</span>
+                    <div class="wrapper">                        
+                        <button class="button" type="submit">Отправить заявку</button>
+                        <span>* - обязательные поля</span>
+                    </div>
                 </form>
             </section>
         </main>
@@ -115,7 +119,7 @@
              <section class="main-footer__map">
                 <div class="main-footer__adress">
                     <p>Приглашаем к сотрудничеству дилеров!</p>
-                    <address>Санкт-Петербург ул.Большая Конюшенная, д. 19/8</address>
+                    <address>ул.Большая Конюшенная, д. 19/8 <br><br> Санкт-Петербург</address>
                 </div>
                 <img src="image/map-pin.png">
             </section>
