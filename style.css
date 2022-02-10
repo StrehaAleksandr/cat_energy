@@ -161,7 +161,7 @@ input[type="radio"].visually-hidden {
     display: block;
     width: 450px;
     margin: 0;
-    margin-left: 195px;
+    margin-left: 80px;
     margin-bottom: 10px;
     position: relative;
     top: 225px;
@@ -172,7 +172,7 @@ input[type="radio"].visually-hidden {
     font-family: Oswald, Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
-    margin-left: 195px;
+    margin-left: 80px;
     position: relative;
     top: 225px;
 }
@@ -180,7 +180,7 @@ input[type="radio"].visually-hidden {
 .fuction-eat img
 {
     position: relative;
-    left: 550px;
+    left: 443px;
     top: -50px;
 }
 
@@ -188,7 +188,7 @@ input[type="radio"].visually-hidden {
 {
     position: relative;
     top: -225px;
-    left: -360px;
+    left: -477px;
 }
 
 .weight-change__list
@@ -398,8 +398,46 @@ input[type="radio"].visually-hidden {
 .slider-button
 {
     position: relative;
-    left: 800px;
+    left: 600px;
     top: -90px;
+    cursor: pointer;
+}
+
+.slider-button > :last-child
+{
+    margin-left: 450px;
+}
+
+.slider-button button + .button-slider
+{
+    position: absolute;
+    top: -15px;
+    left: 260px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.slider-button button:focus + .button-slider
+{
+    border-color: #68b738;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.slider-button button + .button-slider::before
+{
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    width: 10px;
+    height: 10px;
+    background-color: #68b738;
+    border: 1px solid #68b738;
+    border-radius: 5px;
 }
 
 .products h2
@@ -408,7 +446,8 @@ input[type="radio"].visually-hidden {
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
-    margin-left: 100px;
+    margin-top: 75px;
+    margin-bottom: 155px;
 }
 
 .products__list
@@ -426,8 +465,35 @@ input[type="radio"].visually-hidden {
     height: 430px;
     width: 245px;
     margin-bottom: 140px;
-    margin-right: 79px;
+    margin-right: 80px;
     text-align: center;
+    position: relative;
+}
+
+.products__items img
+{
+    position: absolute;
+    bottom: 300px;
+    left: 0px;
+}
+
+.products__items h3
+{
+    font-family: Oswald, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 130px;
+    margin: 0 auto;
+    margin-top: 165px;
+    margin-bottom: 30px;
+}
+
+.products__items button
+{
+    width: 170px;
+    height: 40px;
+    padding: 0;
 }
 
 .products__list > :nth-child(4n)
@@ -439,7 +505,7 @@ input[type="radio"].visually-hidden {
 {
     width: 170px;
     margin: 0 auto;
-    margin-bottom: 5px;
+    margin-bottom: 35px;
     border-collapse: collapse;
 }
 
@@ -464,8 +530,8 @@ input[type="radio"].visually-hidden {
     border-width: 1px;
     border-color: gray;
 
-    height: 430px;
-    width: 245px;
+    height: 428px;
+    width: 243px;
     text-align: center;
 }
 
@@ -525,7 +591,7 @@ input[type="radio"].visually-hidden {
     width: 60px;
     height: 2px;
 
-    background-color: green;
+    background-color: #68b738;
 }
 
 .custom-h::after
@@ -686,7 +752,7 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
 }
 
-.modal input[required]
+.modal input[required]:invalid
 {
     border-color: red;
 }
