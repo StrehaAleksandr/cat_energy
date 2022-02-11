@@ -38,6 +38,7 @@ a
 
 .button
 {
+    display: inline-block;
     font-family: Oswald, Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -116,6 +117,11 @@ input[type="radio"].visually-hidden {
     color: white;
 }
 
+.white-color .page-active
+{
+    border-bottom: 2px solid white;
+}
+
 .marging
 {
     margin-left: 35px;
@@ -134,7 +140,8 @@ input[type="radio"].visually-hidden {
 
 .page-active
 {
-    text-decoration: underline;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #68b738;
 }
 
 .main-navigation-logo img 
@@ -337,13 +344,15 @@ input[type="radio"].visually-hidden {
     width: 435px;
 }
 
-.life-example span
+.life-example button
 {
     text-transform: uppercase;
     font-family: Oswald, Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
+    border: 0;
+    cursor: pointer;
 }
 
 .life-example h3
@@ -401,17 +410,14 @@ input[type="radio"].visually-hidden {
     left: 600px;
     top: -90px;
     cursor: pointer;
-}
-
-.slider-button > :last-child
-{
-    margin-left: 450px;
+    display: flex;
+    align-items: center;
 }
 
 .slider-button button + .button-slider
 {
     position: absolute;
-    top: -15px;
+    top: -10px;
     left: 260px;
     width: 40px;
     height: 40px;
@@ -440,6 +446,15 @@ input[type="radio"].visually-hidden {
     border-radius: 5px;
 }
 
+.custom-div
+{
+    width: 430px;
+    height: 10px;
+    background-color: #dcdcdc;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .products h2
 {
     font-family: Oswald, Arial, sans-serif;
@@ -447,7 +462,7 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     line-height: 60px;
     margin-top: 75px;
-    margin-bottom: 155px;
+    margin-bottom: 80px;
 }
 
 .products__list
@@ -456,26 +471,28 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    align-items: flex-end;
 }
 
 .products__items
 {
-    background-color: #f2f2f2;
-
-    height: 430px;
-    width: 245px;
-    margin-bottom: 140px;
+    /* background-color: #f2f2f2; */
+    background-image: linear-gradient(to top, #f2f2f2, #f2f2f2 430px, white 430px, white 100%);
+    /* background-size: 245px, 430px; */
+    /* height: 430px;
+    width: 245px; */
+    margin-bottom: 60px;
     margin-right: 80px;
     text-align: center;
     position: relative;
 }
 
-.products__items img
+/* .products__items img
 {
     position: absolute;
     bottom: 300px;
     left: 0px;
-}
+} */
 
 .products__items h3
 {
@@ -485,15 +502,21 @@ input[type="radio"].visually-hidden {
     line-height: 20px;
     width: 130px;
     margin: 0 auto;
-    margin-top: 165px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
-.products__items button
+.products__items a
 {
+    display: block;
+    line-height: 20px;
     width: 170px;
-    height: 40px;
     padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .products__list > :nth-child(4n)
@@ -530,16 +553,18 @@ input[type="radio"].visually-hidden {
     border-width: 1px;
     border-color: gray;
 
-    height: 428px;
+    /* height: 428px; */
     width: 243px;
     text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 45px;
 }
 
 .products__more img
 {
     width: 60px;
     height: 60px;
-    margin-top: 55px;
+    margin-top: 45px;
 }
 
 .products__more h3
@@ -550,6 +575,7 @@ input[type="radio"].visually-hidden {
     line-height: 20px;
     width: 135px;
     margin: 30px auto;
+    margin-top: 50px;
 }
 
 .products__more p
@@ -557,18 +583,22 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     width: 170px;
     margin: 0 auto;
+    margin-bottom: 80px;
 }
 
-.products__more button
+.products__more a
 {
     border: none;
     font-family: Oswald, Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
+    background-color: #f2f2f2;
     width: 170px;
-    height: 40px;
-    margin-top: 90px;
+    /* height: 40px; */
+    padding: 10px 40px;
+    /* margin-top: 90px; */
+    /* margin-bottom: 40px; */
 }
 
 .custom-h
@@ -581,7 +611,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     align-items: center;
     margin-bottom: 75px;
-    margin-top: -60px;
+    margin-top: 20px;
 }
 
 .custom-h::before,
@@ -650,13 +680,14 @@ input[type="radio"].visually-hidden {
     width: 245px;
 }
 
-.anoter-products__items button
+.anoter-products__items a
 {
     font-size: 16px;
     line-height: 20px;
+    text-align: center;
+    
     width: 245px;
-    height: 40px;
-    padding: 0;
+    padding: 10px 0;
     margin-top: 15px;
     margin-bottom: 15px;
 }
