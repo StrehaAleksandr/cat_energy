@@ -27,7 +27,6 @@ body
     line-height: 24px;
     color: black;
     background-color: white;
-    counter-reset: section;
 }
 
 a 
@@ -337,6 +336,7 @@ input[type="radio"].visually-hidden {
     padding: 0px;
     justify-content: space-between;
     margin-bottom: 140px;
+    counter-reset: section;
 }
 
 .how-work__items
@@ -346,7 +346,7 @@ input[type="radio"].visually-hidden {
     z-index: 1;
 }
 
-.how-work__items ::after
+.how-work__items::after
 {
     counter-increment: section;
     content: counter(section);
@@ -356,7 +356,7 @@ input[type="radio"].visually-hidden {
     line-height: 280px;
     color: #f2f2f2;
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     top: -40px;
     left: 120px;
     
