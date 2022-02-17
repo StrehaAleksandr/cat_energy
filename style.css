@@ -50,6 +50,17 @@ a
     border: 0;
 }
 
+.button:hover
+{
+    display: inline-block;
+    background-color: #5eaa2f;
+}
+
+.button:active
+{
+    opacity: 0.3;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -149,6 +160,17 @@ input[type="radio"].visually-hidden {
     width: 210px;
     height: 70px;
 }
+
+.main-navigation-logo:hover
+{
+    opacity: 0.8;
+}
+
+.main-navigation-logo:active
+{
+    opacity: 0.6;
+}
+
 
 /*main*/
 .fuction-eat
@@ -257,6 +279,11 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
     left: 120px;
     top: 10px;
+}
+
+.weight-change__items a:active
+{
+    opacity: 0.3;
 }
 
 .loss-mass::before
@@ -721,6 +748,16 @@ input[type="radio"].visually-hidden {
     /* margin-bottom: 40px; */
 }
 
+.products__more a:hover
+{
+    background-color: #ebebeb;
+}
+
+.products__more a:active
+{
+    opacity: 0.3;
+}
+
 .custom-h
 {
     font-family: Oswald, Arial, sans-serif;
@@ -1154,7 +1191,12 @@ input[type="radio"].visually-hidden {
 .dop-checkbox:focus,
 .dop-checkbox:hover
 {
-    color: green;
+    color: black;
+}
+
+.dop-checkbox:active
+{
+    opacity: 0.3;
 }
 
 .dop-checkbox input[type="checkbox"] + .checkbox-indicator
