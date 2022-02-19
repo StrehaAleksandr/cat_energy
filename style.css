@@ -133,10 +133,20 @@ input[type="radio"].visually-hidden {
     border-bottom: 2px solid white;
 }
 
-.marging
+/* .marging
 {
     margin-left: 35px;
+    
+} */
+
+.pages__items
+{
     margin-right: 35px;
+}
+
+.main-navigation__pages >:last-child
+{
+    margin-right: 0;
 }
 
 .main-navigation__pages :hover
