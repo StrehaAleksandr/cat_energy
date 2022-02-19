@@ -555,20 +555,22 @@ input[type="radio"].visually-hidden {
 .life-exampe__slider
 {
     position: relative;
+    left: 195px;
+    bottom: 165px;
 }
-
+/* 
 .life-exampe__slider img
 {
     position: absolute;
     left: 600px;
     top: -650px;
-}
+} */
 
 .slider-button
 {
     position: relative;
-    left: 600px;
-    top: -90px;
+    /* left: 600px;
+    top: -90px; */
     cursor: pointer;
     display: flex;
     align-items: center;
