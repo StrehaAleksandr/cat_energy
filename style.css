@@ -175,7 +175,7 @@ input[type="radio"].visually-hidden {
 /*main*/
 .fuction-eat
 {
-    background-image: url(image/index-background-desktop@1x.jpg), linear-gradient(to right, #fff, #fff 50%, #68b738 50%, #68b738 100%);
+    background-image: url(image/index-background-desktop@1x.jpg), linear-gradient(to right, #fff, #fff 50%, #64a83b 50%, #64a83b 100%);
     background-repeat: no-repeat;
     background-position: top;
     background-position-x: right;
@@ -204,6 +204,7 @@ input[type="radio"].visually-hidden {
     margin-left: 80px;
     position: relative;
     top: 225px;
+    text-transform: uppercase;
 }
 
 .fuction-eat img
@@ -226,14 +227,16 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
-    margin-left: 110px;
+    /* margin-left: 110px; */
+    justify-content: space-between;
 }
 
 .weight-change__items 
 {
     height: 370px;
     width: 570px;
-    margin-right: 80px;
+    margin-top: 80px;
+    /* margin-right: 80px; */
     background-color: #f2f2f2;    
     position: relative;
 }
@@ -266,6 +269,7 @@ input[type="radio"].visually-hidden {
     line-height: 20px;
     margin-left: 55px;
     position: relative;
+    text-transform: uppercase;
 }
 
 .weight-change__items a::after
@@ -350,8 +354,6 @@ input[type="radio"].visually-hidden {
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
-    padding-right: 20px;
-    margin-left: 110px;
     margin-bottom: 75px;
 }
 
@@ -651,6 +653,7 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .products__items a
@@ -723,6 +726,7 @@ input[type="radio"].visually-hidden {
     width: 135px;
     margin: 30px auto;
     margin-top: 50px;
+    text-transform: uppercase;
 }
 
 .products__more p
@@ -746,6 +750,7 @@ input[type="radio"].visually-hidden {
     padding: 10px 40px;
     /* margin-top: 90px; */
     /* margin-bottom: 40px; */
+    text-transform: uppercase;
 }
 
 .products__more a:hover
@@ -920,7 +925,7 @@ input[type="radio"].visually-hidden {
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
     margin-left: 77px;
     margin-bottom: 75px;
 }
