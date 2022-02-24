@@ -25,15 +25,15 @@ body
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    color: black;
-    background-color: white;
+    color: #111111;
+    background-color: #ffffff;
 }
 
 a 
 {
     font: inherit;
     text-decoration: none;
-    color: black;
+    color: #111111;
 }
 
 .button
@@ -42,7 +42,7 @@ a
     font-family: Oswald, Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
-    color: white;
+    color: #ffffff;
     background-color: #68b738;
     text-transform: uppercase;
     margin: 0px;
@@ -126,12 +126,12 @@ input[type="radio"].visually-hidden {
 
 .white-color a
 {
-    color: white;
+    color: #ffffff;
 }
 
 .white-color .page-active
 {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #ffffff;
 }
 
 /* .marging
@@ -409,7 +409,7 @@ input[type="radio"].visually-hidden {
 
 .life-example 
 {
-    background: linear-gradient(to bottom, white, white 125px,#f2f2f2 125px, #f2f2f2 100%);
+    background: linear-gradient(to bottom, #ffffff, #ffffff 125px,#f2f2f2 125px, #f2f2f2 100%);
 }
 
 .life-example h2
@@ -474,7 +474,7 @@ input[type="radio"].visually-hidden {
 
 .table-kg__h, .table-days__h
 {
-    border: 1px solid black;
+    border: 1px solid #111111;
     border-bottom: none;
 }
 
@@ -498,7 +498,7 @@ input[type="radio"].visually-hidden {
     content: "";
     width: 16px;
     height: 1px;
-    background-color: black;
+    background-color: #111111;
     flex-grow: 1;
     flex-shrink: 0;
 }
@@ -526,7 +526,7 @@ input[type="radio"].visually-hidden {
     content: "";
     width: 3px;
     height: 1px;
-    background-color: black;
+    background-color: #111111;
     flex-grow: 1;
     flex-shrink: 0;
 }
@@ -583,8 +583,8 @@ input[type="radio"].visually-hidden {
     left: 260px;
     width: 40px;
     height: 40px;
-    background-color: white;
-    border: 1px solid gray;
+    background-color: #ffffff;
+    border: 1px solid #808080;
     border-radius: 20px;
 }
 
@@ -639,7 +639,7 @@ input[type="radio"].visually-hidden {
 .products__items
 {
     /* background-color: #f2f2f2; */
-    background-image: linear-gradient(to top, #f2f2f2, #f2f2f2 430px, white 430px, white 100%);
+    background-image: linear-gradient(to top, #f2f2f2, #f2f2f2 430px, #ffffff 430px, #ffffff 100%);
     /* background-size: 245px, 430px; */
     /* height: 430px;
     width: 245px; */
@@ -697,7 +697,7 @@ input[type="radio"].visually-hidden {
 
 .table__string
 {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #808080;
 }
 
 .table__string :first-child
@@ -714,7 +714,7 @@ input[type="radio"].visually-hidden {
 {
     border-style: solid;
     border-width: 1px;
-    border-color: gray;
+    border-color: #808080;
 
     /* height: 428px; */
     width: 243px;
@@ -824,7 +824,7 @@ input[type="radio"].visually-hidden {
 
 .anoter-products__items
 {
-    border: 1px solid gray;
+    border: 1px solid #808080;
     border-right: none;
     border-left: none;
 }
@@ -877,7 +877,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin: 0;
     margin-bottom: 90px;
-    color: white;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -960,7 +960,7 @@ input[type="radio"].visually-hidden {
 
 .js-required
 {
-    border-color: red;
+    border-color: #ff0000;
 }
 
 .conteiner-2
@@ -1005,7 +1005,7 @@ input[type="radio"].visually-hidden {
 .form__what-need
 {
     border-style: solid;
-    border-color: gray;
+    border-color: #808080;
     border-width: 1px;
     width: 544px;
     height: 193px;
@@ -1024,7 +1024,7 @@ input[type="radio"].visually-hidden {
 .radio-conteiner:focus,
 .radio-conteiner:hover
 {
-    color: black;
+    color: #111111;
 }
 
 .radio-conteiner:active
@@ -1039,7 +1039,7 @@ input[type="radio"].visually-hidden {
     left: 0;
     width: 40px;
     height: 40px;
-    border: 1px solid gray;
+    border: 1px solid #808080;
     border-radius: 20px;
 }
 
@@ -1209,7 +1209,7 @@ input[type="radio"].visually-hidden {
 .dop-checkbox:focus,
 .dop-checkbox:hover
 {
-    color: black;
+    color: #111111;
 }
 
 .dop-checkbox:active
@@ -1224,7 +1224,7 @@ input[type="radio"].visually-hidden {
     left: 0;
     width: 40px;
     height: 40px;
-    border: 1px solid gray;
+    border: 1px solid #808080;
 }
 
 .dop-checkbox input[type="checkbox"]:focus + .checkbox-indicator
@@ -1271,7 +1271,7 @@ input[type="radio"].visually-hidden {
     width: 570px;
     margin-top: 95px;
     margin-left: 110px;
-    background-color: white;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     /* justify-content: space-around; */
