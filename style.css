@@ -145,7 +145,7 @@ input[type="radio"].visually-hidden {
     margin-right: 35px;
 }
 
-.main-navigation__pages >:last-child
+.main-navigation__pages :nth-child(3n)
 {
     margin-right: 0;
 }
